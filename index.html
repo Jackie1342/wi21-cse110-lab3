@@ -1,1 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jackie Li's User Page</title>
+        <link rel="stylesheet" href="empty.css">
+        <meta charset="UTF-8">
+    </head>
 
+    <body>
+        <header>
+            <picture>
+                <source srcset="images/headerImage.png" media="(min-width: 800px)">
+                <source srcset="images/headerImage-small.png" media="(min-width: 500px)">
+                <img src="images/headerImage.png" alt="Header Image" />
+            </picture>
+            <nav>
+                <ul>
+                    <li><a href="#">Introduction</a></li>
+                    <li><a href="#">Basic Info</a></li>
+                    <li><a href="#">Relax Time</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Welome to Mengxuan(Jackie) Li's User Page</h1>
+
+            <figure>
+                <img src="images/welcomeCat.jpg" alt="Welcome Cat">
+                <figcaption>Welcome by a kitten</figcaption>
+            </figure>
+            
+            <section>
+                <h2>Introduction</h2>
+                <p>
+                    <i>Hello!</i> My name is <b>Jackie</b>. <br>
+                    I'm an <a>aspired</a> CS student who is pursuing my career as a software engineer. <br> 
+                    Here is some <strong> basic info</strong> that can help you know me!
+                </p>
+                <aside>
+                    <p><em>Note: </em><span>Images are collected from Internet</span></p>
+                </aside>
+            </section>
+
+            <section>
+                <h2>Basic Info</h2>
+                <div>
+                    <h3>The Program language I use</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Java</li>
+                        <li>Swift</li>
+                    </ul>
+                    <hr>
+
+                    <h3>Faviote Muicals in order</h3>
+                    <ol>
+                        <li>Romeo and Juliette French version</li>
+                        <li>Come From Away</li>
+                        <li>Hamliton</li>
+                    </ol>
+                    <figure>
+                        <figcaption>clips from the musicals</figcaption>
+                        <audio controls src="audio.mp3"></audio>
+                        <br>
+                        <video controls src="video.MOV" width="500"></video>
+                    </figure>
+
+                </div>
+            </section>
+            <hr>
+            <table>
+                <caption>Food Table</caption>
+                <colgroup>
+                    <col>
+                    <col span="3">
+                </colgroup>
+                <tr>
+                    <td></td>
+                    <th>Meat</th>
+                    <th>Vegetable</th>
+                    <th>Coke</th>
+                </tr>
+                <tr>
+                    <th>Love it</th>
+                    <td>Yes!</td>
+                    <td></td>
+                    <td>Yes!</td>
+                </tr>
+                <tr>
+                    <th>Hate it</th>
+                    <td></td>
+                    <td>Hate!</td>
+                    <td></td>
+                </tr>
+            </table>
+            <hr>
+            <iframe src="https://jackie1342.github.io" title="My other user page"></iframe>
+            <section>
+                <h2>Relax Time</h2>
+                <code>printf(smile);</code>
+                <canvas width="100" height="100"></canvas>
+                <pre>
+                    ooooooooo
+                  oo         oo
+                  o ---   --- o
+                  oo    v    oo
+                    ooooooooo
+               </pre>
+               <svg viewBox="0 0 300 100" width="200">
+                   <circle cx="50" cy="50" r="50"/>
+               </svg>
+            </section>
+
+            <template>
+                <p>This is a paragraph inside the template</p>
+            </template>
+            <hr>
+            <form action="" method="GET" class="form">
+                <h2>Introduce youself</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name"/><br>
+                <fieldset>
+                    <legend>Choose your gender</legend>
+                    <input type="radio" id="female"/>
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" id="male"/>
+                    <label for="Male">Male</label><br>
+                    
+                    <input type="radio" id="other"/>
+                    <label for="other">Other</label><br>
+                </fieldset>
+                <label for="birth">Birthday</label>
+                <input type="date" id="birth"/> <br>
+                
+                <label for="day">Choose your faviote day in a week</label>
+                <input list="day-choice" id="day"/> 
+                <datalist id="day-choice">
+                    <option value="Monday">
+                    <option value="Tuesday">
+                    <option value="Wednesday">
+                    <option value="Thursday">
+                    <option value="Friday">
+                </datalist>
+                <br>
+
+                <label for="pet">Choose your pet:</label>
+                <select id="pet">
+                    <optgroup label="Cats">
+                        <option>Polydactyl</option>
+                        <option>Snowshoe</option>
+                        <option>Calico</option>
+                    </optgroup>
+                    <optgroup label="Dogs">
+                        <option>Beagle</option>
+                        <option>Akita</option>
+                        <option>Boxer</option>
+                    </optgroup>
+                </select>
+                <br>
+                <label for="color">Choose your faviote color</label>
+                <input type="color" id="color"/> <br>
+
+                <label for="email">Enter your email</label>
+                <input type="email" id="email"/><br>
+
+                <label for="tel">Enter your phone number</label>
+                <input type="tel" id="tel"/><br>
+
+                <label for="number">Enter your lucky number</label>
+                <input type="number" id="number"/><br>
+
+                <label for="time">What time is it?</label>
+                <input type="time" id="time"/><br>
+
+                <input type="reset"/><br>
+
+                <label for="story">Introduce yourself</label><br>
+                <textarea id="story" rows="6" cols="50">
+                    Hello!
+                </textarea>
+                <br>
+                <input type="checkbox" id="check"/>
+                <label for="check">Check if you finish all the question</label><br>
+
+            </form>
+
+            <button class="button" type="button">Finish</button>
+
+        </main>
+        
+        <details>
+            <summary>This is the end of this page.</summary>
+            THE END
+        </details>
+        <footer>
+            <p>@ 2021 Jackie Li</p>
+        </footer>
+
+
+    </body>
+</html>
