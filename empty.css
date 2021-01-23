@@ -8,8 +8,11 @@ h2, h3 {
     text-decoration: overline;
 }
 
-body{
-   background-color: rgb(238, 251, 248); 
+
+@media screen and (mid-width:100px){
+    body{
+        background-color: rgb(238, 251, 248); 
+     }         
 }
 
 /*make a border around each section*/
@@ -80,4 +83,17 @@ video {
     justify-content: space-evenly;
     margin: 10px 20px;
     padding: 10px 5px;
+}
+
+table{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 10px 50px 50px 50px;
+    grid-template-areas: 
+        "header header header";
+}
+
+.he{
+    grid-area: header;
 }
