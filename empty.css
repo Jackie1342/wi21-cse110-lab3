@@ -35,8 +35,12 @@ section{
     padding-left: 30px;
 }
 
-li {
+nav li {
     display: inline;
+}
+
+ul>li{
+    background-color: aquamarine;
 }
 
 span {
@@ -76,7 +80,7 @@ video {
     background-color: hsla(9, 100%, 64%, 0.2);
 }
 
-.container {
+ul.container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -96,4 +100,12 @@ table{
 
 .he{
     grid-area: header;
+}
+
+th ~ td {
+    background-color: chocolate;
+}
+
+th + td{
+    color: aliceblue;
 }
