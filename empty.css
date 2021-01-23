@@ -3,9 +3,8 @@
     font-family: 'Bodoni Moda', serif;
 }
 
-h2 {
+h2, h3 {
     color: slateblue;
-    text-align: left;
     text-decoration: overline;
 }
 
@@ -15,10 +14,22 @@ body{
 
 /*make a border around each section*/
 section{
+    align-self: center;
     border-style: solid;
     border-width: 0.3vw;
     border-color: rgba(148, 116, 255, 0.9);
     border-radius: 2px;
+    /*box model*/
+    height: 110%;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 65px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 30px;
 }
 
 li {
@@ -42,7 +53,7 @@ a:hover {
 }
 
 #relax {
-    height: 50em;
+    height: 30em;
     max-width: 200%;
     min-width: 10%;
 }
@@ -60,4 +71,13 @@ video {
 
 .smile{
     background-color: hsla(9, 100%, 64%, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 10px 20px;
+    padding: 10px 5px;
 }
