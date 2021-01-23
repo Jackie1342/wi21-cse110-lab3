@@ -1,0 +1,63 @@
+*{
+    text-align: center;
+    font-family: 'Bodoni Moda', serif;
+}
+
+h2 {
+    color: slateblue;
+    text-align: left;
+    text-decoration: overline;
+}
+
+body{
+   background-color: rgb(238, 251, 248); 
+}
+
+/*make a border around each section*/
+section{
+    border-style: solid;
+    border-width: 0.3vw;
+    border-color: rgba(148, 116, 255, 0.9);
+    border-radius: 2px;
+}
+
+li {
+    display: inline;
+}
+
+span {
+    display: block; 
+}
+
+canvas {
+    color: #3cb371
+}
+
+a:active {
+    color: #FF2
+}
+
+a:hover {
+    color: hsl(300, 76%, 72%);
+}
+
+#relax {
+    height: 50em;
+    max-width: 200%;
+    min-width: 10%;
+}
+
+img[alt="Welcome Cat"]{
+    position:absolute;
+    top:0.5cm;
+    left:5mm;
+}
+
+video {
+    position: relative;
+    left: 20rem;
+}
+
+.smile{
+    background-color: hsla(9, 100%, 64%, 0.2);
+}
